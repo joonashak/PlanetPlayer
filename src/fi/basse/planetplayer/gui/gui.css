@@ -1,0 +1,248 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 7, 2017, 2:14:59 PM
+    Author     : Joonas
+*/
+
+
+@font-face {
+    src: url("/resources/fonts/Ubuntu-L.ttf");
+}
+
+@font-face {
+    src: url("/resources/fonts/Ubuntu-R.ttf");
+}
+
+@font-face {
+        src: url("/resources/fonts/TRON.TTF");
+}
+
+.text {
+    -fx-font-family: 'Ubuntu';
+}
+
+ControlPane {
+    -fx-background-color: #44454B;
+}
+
+VBox {
+    -fx-min-width: 300px;
+    -fx-alignment: center;
+}
+
+GridPane {
+    -fx-alignment: center;
+}
+
+#title-pane {
+    -fx-alignment: center;
+}
+
+#title {
+   -fx-text-fill: #DEE2F2;
+   -fx-padding: 13px 0 13px 0;
+}
+
+#title .text {
+    -fx-font-size: 28px;
+    -fx-font-family: 'TRON';
+}
+
+#body-pane {
+    -fx-background: #333439;
+    -fx-border-width: 1px;
+    -fx-border-color: #333439;
+}
+
+.body-box {
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #737684;
+}
+
+.name-box {
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #737684;
+    -fx-padding: 21px 5px 4px 5px;
+}
+
+.body-name {
+    -fx-text-fill: #737684;
+    -fx-padding: 0 0 0 6px;
+}
+
+.body-name .text {
+    -fx-font-size: 14px;
+}
+
+.spinner-label {
+    -fx-text-fill: #D0D3E2;
+    -fx-padding: 11px 0 11px 15px;
+}
+
+.spinner-label .text {
+    -fx-font-size: 15px;
+}
+
+.body-spinner {
+    -fx-min-width: 130px;
+    -fx-max-width: 130px;
+    -fx-padding: 0 10px 0 0;
+    -fx-background-color: #333439;
+}
+
+.body-spinner .text-field {
+    -fx-background-color: #333439;
+    -fx-text-fill: #D0D3E2;
+    -fx-font-size: 15px;
+}
+
+.body-spinner .increment-arrow-button,
+.body-spinner .decrement-arrow-button {
+    -fx-background-color: #333439;
+}
+
+.body-spinner .increment-arrow,
+.body-spinner .decrement-arrow {
+    -fx-background-color: #737684;
+}
+
+.body-spinner .increment-arrow-button:hover .increment-arrow,
+.body-spinner .decrement-arrow-button:hover .decrement-arrow {
+    -fx-background-color: #A6A8B4;
+}
+
+.body-spinner .increment-arrow-button:pressed .increment-arrow,
+.body-spinner .decrement-arrow-button:pressed .decrement-arrow {
+    -fx-background-color: #FFFFFF;
+}
+
+.body-button {
+    -fx-background-color: #333439;
+    -fx-font-size: 14px;
+    -fx-text-fill: #737684;
+    -fx-border-width: 1px;
+    -fx-border-color: #737684;
+    -fx-border-radius: 100px;
+    -fx-padding: 4px 10px 4px 10px;
+}
+
+.body-button:hover {
+    -fx-border-color: #A6A8B4;
+}
+
+.body-button:pressed {
+    -fx-border-color: #FFFFFF;
+}
+
+.body-button-container {
+    -fx-padding: 11px 0 11px 0;
+    -fx-spacing: 25px;
+    -fx-alignment: center;
+}
+
+.horizontal-divider,
+.horizontal-divider-dark {
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #46474E;
+    -fx-min-width: 250px;
+    -fx-max-width: 250px;
+    -fx-alignment: center;
+}
+
+.horizontal-divider-dark {
+    -fx-border-color: #34353B;
+}
+
+#controls-title {
+    -fx-text-fill: #222329;
+    -fx-font-size: 14px;
+    -fx-padding: 6px 0 0 12px;
+}
+
+#slider-grid {
+    -fx-padding: 22px 12px 0 12px;
+    -fx-hgap: 25px;
+    -fx-vgap: 15px;
+}
+
+#slider-grid Label {
+    -fx-text-fill: #222329;
+    -fx-font-size: 14px;
+}
+
+Slider .track {
+    -fx-padding: 1px 0 0 0;
+    -fx-background-insets: 0;
+    -fx-background-color: #737684;
+}
+
+Slider .thumb {
+    -fx-background-image: url("/resources/icons/thumb.png");
+    -fx-padding: 6.5px;
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(gaussian, #2B2B2B, 5, 0, 1, 1);
+}
+
+.control-buttons {
+    -fx-spacing: 28px;
+    -fx-alignment: center;
+    -fx-padding: 22px 0 22px 0;
+}
+
+#controls Button {
+    -fx-background-size: 24px 24px;
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-min-height: 24px;
+    -fx-pref-height: 24px;
+    -fx-max-height: 24px;
+    -fx-min-width: 24px;
+    -fx-pref-width: 24px;
+    -fx-max-width: 24px;
+}
+
+#controls Button:hover {
+    -fx-effect: dropshadow(gaussian, #2B2B2B, 5, 0, 3, 3);
+}
+
+#controls Button:pressed {
+    -fx-effect: dropshadow(gaussian, #2B2B2B, 5, 0, 3, 3);
+    -fx-background-size: 21px 21px;
+}
+
+#play-button {
+    -fx-background-image: url("/resources/icons/play.png");
+}
+
+#pause-button {
+    -fx-background-image: url("/resources/icons/pause.png");
+}
+
+#reset-button {
+    -fx-background-image: url("/resources/icons/reload.png");
+}
+
+#help-button {
+    -fx-background-image: url("/resources/icons/help.png");
+}
+
+#settings-button {
+    -fx-background-image: url("/resources/icons/cog.png");
+}
+
+#quit-button {
+    -fx-background-image: url("/resources/icons/power.png");
+}
+
+#quit-button:hover {
+    -fx-effect: dropshadow(gaussian, #571F1F, 5, 0, 3, 3);
+}
+
+#quit-button:pressed {
+    -fx-effect: dropshadow(gaussian, #571F1F, 5, 0, 3, 3);
+}

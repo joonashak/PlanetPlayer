@@ -43,7 +43,7 @@ buildNumber.properties
 nbproject/
 build/
 nbbuild/
-dist/
+dist/*
 nbdist/
 .nb-gradle/
 
@@ -54,4 +54,5 @@ manifest.mf
 *.xd
 *.csv
 *.xlsx
-lib/*
+lib/
+!/dist/PlanetPlayer.jar

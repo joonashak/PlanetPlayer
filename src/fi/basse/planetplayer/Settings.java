@@ -1,5 +1,8 @@
 package fi.basse.planetplayer;
 
+import javafx.scene.canvas.Canvas;
+import javafx.scene.layout.Pane;
+
 /**
  *
  * @author Joonas
@@ -10,6 +13,8 @@ public class Settings {
     private double trailFactor = 10;
     private boolean paused = false;
     private SolarSystem solarSystem;
+    private Canvas canvas = null;
+    private Pane root = null;
 
     public double getZoomFactor() {
         return zoomFactor;
@@ -61,6 +66,22 @@ public class Settings {
 
     public void setTrailFactor(double trailFactor) {
         this.trailFactor = trailFactor;
+    }
+
+    public Canvas getCanvas() {
+        return canvas;
+    }
+
+    public void setCanvas(Canvas canvas) {
+        this.canvas = canvas;
+    }
+
+    public Pane getRoot() {
+        return root;
+    }
+
+    public void setRoot(Pane root) {
+        this.root = root;
     }
     
     

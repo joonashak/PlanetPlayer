@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 /**
@@ -23,22 +24,27 @@ public class PlanetPlayer extends Application {
         SolarSystem solarSystem = new SolarSystem(settings);
         settings.setSolarSystem(solarSystem);
         
-        BorderPane layout = new BorderPane();
+        BorderPane root = new BorderPane();
+        settings.setRoot(root);
         
-        Scene scene = new Scene(layout);
+        Scene scene = new Scene(root);
         scene.getStylesheets().add("fi/basse/planetplayer/gui/gui.css");
+        // This is required for GaussianBlur to work without white edges
+        scene.setFill(Color.BLACK);
+        
         stage.setScene(scene);
         stage.setFullScreen(true);
         stage.show();
         
         ControlPane menu = new ControlPane(stage, settings);
-        layout.setRight(menu);
+        root.setRight(menu);
         
         double canvasWidth = stage.getWidth() - menu.getMinWidth();
         double canvasHeight = stage.getHeight();
         
         Canvas canvas = new Canvas(canvasWidth, canvasHeight);
-        layout.setLeft(canvas);
+        settings.setCanvas(canvas);
+        root.setLeft(canvas);
         GraphicsContext draw = canvas.getGraphicsContext2D();
         
         canvas.setOnScroll(event -> {

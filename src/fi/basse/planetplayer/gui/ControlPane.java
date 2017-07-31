@@ -130,6 +130,16 @@ public class ControlPane extends BorderPane {
         
         controls.getChildren().addAll(controlButtonsTop, divider, 
                 controlButtonsBottom);
+        
+        // TODO remove
+        // popup sample:
+        
+        /*
+        helpButton.setOnAction(event -> {
+            PopUp helpPopUp = new PopUp(stage, settings);
+            helpPopUp.pauseAndShow();
+        });
+        */
     }
     
     private void setPlayPause(Button button) {

@@ -17,8 +17,8 @@ Some development ideas include:
 * Visual scale.
 * Time to apoapsis and perhaps some other information as well.
 * Improve planet labeling.
-* Add (a stylish) scroll bar to the control panel.
 * Tune parameters for smoother & more accurate simulation.
+* Add Help and Settings windows (use PopUp class)
 
 ## Installation
 

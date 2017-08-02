@@ -137,6 +137,10 @@ public class ControlPane extends BorderPane {
         /*
         helpButton.setOnAction(event -> {
             PopUp helpPopUp = new PopUp(stage, settings);
+            VBox tallBox = new VBox();
+            tallBox.setStyle("-fx-min-height: 800px; -fx-background-color: black;");
+            helpPopUp.setTitleText("Help");
+            helpPopUp.setContent(tallBox);
             helpPopUp.pauseAndShow();
         });
         */

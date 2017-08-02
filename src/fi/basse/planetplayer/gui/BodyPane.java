@@ -19,8 +19,7 @@ public class BodyPane extends ScrollPane {
         
         setId("body-pane");
         setHbarPolicy(ScrollBarPolicy.NEVER);
-        // TODO (hidden for styling)
-        setVbarPolicy(ScrollBarPolicy.NEVER);
+        setVbarPolicy(ScrollBarPolicy.AS_NEEDED);
         
         VBox container = new VBox();
         setContent(container);

@@ -47,6 +47,21 @@ GridPane {
     -fx-border-color: #333439;
 }
 
+#body-pane .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+#body-pane .scroll-bar .decrement-arrow,
+#body-pane .scroll-bar .increment-arrow {
+    -fx-padding: 0 4px 0 0;
+    -fx-shape: "";
+}
+
+#body-pane .scroll-bar .thumb {
+    -fx-background-color: #535662;
+    -fx-background-radius: 3px;
+}
+
 .body-box {
     -fx-border-width: 0 0 1px 0;
     -fx-border-color: #737684;
@@ -111,6 +126,7 @@ GridPane {
 
 .body-button {
     -fx-background-color: #333439;
+    -fx-background-radius: 100px;
     -fx-font-size: 14px;
     -fx-text-fill: #737684;
     -fx-border-width: 1px;
@@ -234,4 +250,51 @@ Slider .thumb {
 
 #quit-button:pressed {
     -fx-effect: dropshadow(gaussian, #571F1F, 5, 0, 3, 3);
+}
+
+#pop-up-pane {
+    -fx-background-color: rgba(64, 65, 71, 0.5);
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-color: #737684;
+    -fx-min-width: 1000px;
+    -fx-min-height: 800px;
+    -fx-padding: 20px;
+}
+
+#pop-up-title {
+    -fx-text-fill: #8D90A3;
+}
+
+#pop-up-title .text {
+    -fx-font-size: 36px;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+#pop-up-content {
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+    -fx-padding: 20px;
+}
+
+#pop-up-content .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+#pop-up-content .scroll-bar .decrement-arrow,
+#pop-up-content .scroll-bar .increment-arrow {
+    -fx-padding: 0 4px 0 0;
+    -fx-shape: "";
+    -fx-background-color: rgba(92, 92, 92, 0.5);
+}
+
+#pop-up-content .scroll-bar .track {
+    -fx-background-color: rgba(92, 92, 92, 0.5);
+}
+
+#pop-up-content .scroll-bar .thumb {
+    -fx-background-color: #535662;
+    -fx-background-radius: 3px;
 }
